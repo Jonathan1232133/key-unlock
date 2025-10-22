@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lock-container">
+        <div class="lock-body">
+            <div class="lock-shackle"></div>
+            <div class="code-slots">
+                <input type="text" maxlength="1" class="digit" inputmode="numeric" pattern="[0-9]" autocomplete="off">
+                <input type="text" maxlength="1" class="digit" inputmode="numeric" pattern="[0-9]" autocomplete="off">
+                <input type="text" maxlength="1" class="digit" inputmode="numeric" pattern="[0-9]" autocomplete="off">
+                <input type="text" maxlength="1" class="digit" inputmode="numeric" pattern="[0-9]" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <!-- Аудио элементы -->
+    <audio id="sound1" src="padlock-1.mp3" preload="auto"></audio>
+    <audio id="sound2" src="padlock-2.mp3" preload="auto"></audio>
+    <audio id="sound3" src="padlock-3.mp3" preload="auto"></audio>
+    <audio id="sound4" src="padlock-4.mp3" preload="auto"></audio>
+    <audio id="soundUnlocked" src="padlock-unlocked.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
